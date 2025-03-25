@@ -1,0 +1,80 @@
+/* Navbar Brand */
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem; /* Adjust as needed */
+    padding-bottom: 0.3125rem; /* Adjust as needed */
+    margin-right: 1rem; /* Adjust as needed */
+    font-size: 1.25rem; /* Adjust as needed */
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-brand img {
+    max-width: 100%; /* Ensure the logo image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar Toggler (Hamburger icon) */
+.navbar-toggler {
+    padding: 0.25rem 0.75rem; /* Adjust padding as needed */
+    font-size: 1.25rem; /* Adjust font size as needed */
+    line-height: 1; /* Ensure proper line height */
+    border: 1px solid transparent; /* Ensure the button has a border */
+    border-radius: 0.25rem; /* Adjust border radius as needed */
+}
+
+.navbar-toggler:focus {
+    outline: 0; /* Remove focus outline */
+    box-shadow: none; /* Remove box shadow on focus */
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* Navbar Nav Links */
+.navbar-nav {
+    margin-right: -0.75rem; /* Adjust margin as needed */
+}
+
+.navbar-nav .nav-item {
+    padding-left: 0.75rem; /* Adjust padding as needed */
+    padding-right: 0.75rem; /* Adjust padding as needed */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    color: rgba(0, 0, 0, 0.5); /* Default link color */
+    font-size: 0.875rem; /* Adjust font size as needed */
+    font-weight: 500; /* Adjust font weight as needed */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #000; /* Hover and focus link color */
+    text-decoration: none; /* Remove underline on hover and focus */
+}
+
+/* Active Nav Link */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link.active {
+    color: #000; /* Active link color */
+}
+
+/* Navbar Collapse (Dropdown menu) */
+.navbar-collapse {
+    flex-grow: 0; /* Disable automatic flex-grow */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0.5rem; /* Adjust padding for smaller screens */
+        padding-right: 0.5rem; /* Adjust padding for smaller screens */
+    }
+}
